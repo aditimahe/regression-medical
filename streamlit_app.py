@@ -114,7 +114,7 @@ region = st.selectbox('Region', ['southwest', 'northwest', 'southeast', 'northea
 sex_encode = 1 if sex == 'female' else 0
 smoker_encode = 1 if smoker == 'yes' else 0
 region_encode = ['southwest', 'northwest', 'southeast', 'northeast'].index(region)
-S
+
 # Predict charges
 predicted_charges_transformed = linear_model.predict([[age, bmi, children, sex_encode, smoker_encode, region_encode]])
 
